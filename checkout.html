@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Thanh toán</title>
+</head>
+<body>
+  <header>
+    <h1>Tiệm sách Moonlit</h1>
+    <p>Những cuốn sách với mùi giấy và ký ức.</p>
+  </header>
+
+  <!-- Bố cục chính: bảng 2 cột (trái form thông tin, phải tóm tắt đơn hàng) -->
+  <main>
+    <table border="1" cellpadding="12" cellspacing="0" width="100%" style="border-collapse:collapse;">
+      <colgroup>
+        <col width="65%">
+        <col width="35%">
+      </colgroup>
+      <tr>
+        <td valign="top">
+          <h2>Thông tin thanh toán</h2>
+          <form method="post" action="#" aria-label="Form thanh toán">
+            <table border="0" cellpadding="8" cellspacing="0" width="100%">
+              <tr>
+                <td colspan="2"><label>Họ *<br><input type="text" name="first_name" placeholder="An" style="width:95%"></label></td>
+                <td colspan="2"><label>Tên *<br><input type="text" name="last_name" placeholder="Đặng" style="width:95%"></label></td>
+              </tr>
+              <tr>
+                <td colspan="4"><label>Quốc gia / Vùng *<br><input type="text" name="country" placeholder="Việt Nam" style="width:98%"></label></td>
+              </tr>
+              <tr>
+                <td colspan="4"><label>Địa chỉ đường *<br><input type="text" name="street" placeholder="72 Paris" style="width:98%"></label></td>
+              </tr>
+              <tr>
+                <td colspan="4"><label>Số nhà, tầng, căn hộ (tùy chọn)<br><input type="text" name="apt" style="width:98%"></label></td>
+              </tr>
+              <tr>
+                <td><label>Mã bưu chính (tùy chọn)<br><input type="text" name="zip" placeholder="75000" style="width:95%"></label></td>
+                <td><label>Tỉnh / Thành (tùy chọn)<br><input type="text" name="state" placeholder="Hồ Chí Minh" style="width:95%"></label></td>
+                <td><label>Thành phố *<br><input type="text" name="city" placeholder="Quận 1" style="width:95%"></label></td>
+                <td><label>Điện thoại (tùy chọn)<br><input type="tel" name="phone" style="width:95%"></label></td>
+              </tr>
+              <tr>
+                <td colspan="4"><label>Địa chỉ email *<br><input type="email" name="email" placeholder="andang271205@gmail.com" style="width:98%"></label></td>
+              </tr>
+              <tr>
+                <td colspan="4"><label><input type="checkbox" name="subscribe"> Tôi muốn nhận email ưu đãi và thông tin sản phẩm</label></td>
+              </tr>
+              <tr>
+                <td colspan="4"><label><input type="checkbox" name="ship_diff"> Giao đến địa chỉ khác?</label></td>
+              </tr>
+              <tr>
+                <td colspan="4">Ghi chú đơn hàng (tùy chọn)<br><textarea name="note" rows="4" cols="60" placeholder="Ghi chú cho đơn hàng, ví dụ: thời gian giao..."></textarea></td>
+              </tr>
+            </table>
+          </form>
+        </td>
+        <td valign="top">
+          <h3>Đơn hàng của bạn</h3>
+          <table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse:collapse;">
+            <tr>
+              <td><strong>Sản phẩm</strong></td>
+              <td align="right"><strong>Tạm tính</strong></td>
+            </tr>
+            <tr>
+              <td>Gửi anh những trang sách cũ × 2</td>
+              <td align="right">240.000 ₫</td>
+            </tr>
+            <tr>
+              <td>Những con phố mưa × 1</td>
+              <td align="right">85.000 ₫</td>
+            </tr>
+            <tr>
+              <td>Đi qua hoa cúc × 1</td>
+              <td align="right">100.000 ₫</td>
+            </tr>
+            <tr>
+              <td>Mắt biếc × 1</td>
+              <td align="right">95.000 ₫</td>
+            </tr>
+            <tr>
+              <td><strong>Tạm tổng</strong></td>
+              <td align="right"><strong>520.000 ₫</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Vận chuyển</strong></td>
+              <td>
+                <label><input type="radio" name="shipping" checked> Giao hàng nhanh: 20.000 ₫</label><br>
+                <label><input type="radio" name="shipping"> Giao hàng hỏa tốc: 30.000 ₫</label><br>
+                <label><input type="radio" name="shipping"> Nhận tại cửa hàng</label>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Tổng cộng</strong></td>
+              <td align="right"><strong>540.000 ₫</strong><br><small>(đã bao gồm 2.222 ₫ VAT)</small></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <table border="1" cellpadding="8" cellspacing="0" width="100%">
+                  <tr>
+                    <td><label><input type="radio" name="payment_method" checked> Chuyển khoản ngân hàng</label>
+                      <div>Vui lòng chuyển khoản trực tiếp vào tài khoản ngân hàng của chúng tôi. Vui lòng dùng mã đơn hàng làm tham chiếu thanh toán. Đơn hàng sẽ được xử lý khi tiền đã về tài khoản.</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label><input type="radio" name="payment_method"> Thanh toán khi nhận hàng (COD)</label></td>
+                  </tr>
+                  <tr>
+                    <td><label><input type="radio" name="payment_method"> PayPal</label></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2"><button type="submit">Đặt hàng</button></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </main>
+
+  <footer>
+    <p>Tiệm sách Moonlit — Địa chỉ: Số 1, Phố Cũ, Thành phố</p>
+    <p><a href="#">Chính sách đổi trả</a> | <a href="#">Liên hệ</a></p>
+    <p>© 2025 Tiệm sách Moonlit</p>
+  </footer>
+</body>
+</html>

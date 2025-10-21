@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tài khoản — Tiệm sách Moonlit</title>
+</head>
+<body>
+  <header>
+    <h1>Tiệm sách Moonlit</h1>
+    <p>Trang quản lý tài khoản - Tích điểm & Nâng hạng thành viên</p>
+  </header>
+
+  <main>
+    <!-- Layout 2 cột: trái nội dung, phải khung điểm & nâng hạng -->
+    <table border="1" cellpadding="12" cellspacing="0" width="100%" style="border-collapse:collapse;">
+      <colgroup>
+        <col width="70%">
+        <col width="30%">
+      </colgroup>
+      <tr>
+        <td valign="top">
+          <h2>Thông tin cá nhân</h2>
+          <table border="0" cellpadding="8" cellspacing="0" width="100%">
+            <tr>
+              <td>Họ tên</td>
+              <td><strong>Nguyễn Văn A</strong></td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>example5@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Điện thoại</td>
+              <td>0912345678</td>
+            </tr>
+            <tr>
+              <td>Địa chỉ</td>
+              <td>Số 1, Phố Cũ, Thành phố</td>
+            </tr>
+          </table>
+
+          <h2>Lịch sử mua hàng (mới nhất)</h2>
+          <table border="1" cellpadding="8" cellspacing="0" width="100%">
+            <tr>
+              <th>Đơn hàng</th>
+              <th>Ngày</th>
+              <th>Trị giá</th>
+              <th>Trạng thái</th>
+            </tr>
+            <tr>
+              <td>#1234</td>
+              <td>2025-10-01</td>
+              <td>320.000 ₫</td>
+              <td>Đã giao</td>
+            </tr>
+            <tr>
+              <td>#1229</td>
+              <td>2025-09-20</td>
+              <td>150.000 ₫</td>
+              <td>Đã giao</td>
+            </tr>
+            <tr>
+              <td>#1215</td>
+              <td>2025-08-15</td>
+              <td>85.000 ₫</td>
+              <td>Đang xử lý</td>
+            </tr>
+          </table>
+
+          <h2>Đổi điểm</h2>
+          <p>Bạn có thể dùng điểm để đổi mã giảm giá hoặc quà. (Ví dụ: 100 điểm = 10.000 ₫)</p>
+          <form method="post" action="#">
+            <label>Số điểm muốn đổi: <input type="number" name="points" min="100" step="100" value="100"></label>
+            <button type="submit">Đổi điểm</button>
+          </form>
+
+        </td>
+
+        <td valign="top">
+          <h3>Điểm & Hạng thành viên</h3>
+          <table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse:collapse;">
+            <tr><td>Điểm hiện có</td><td align="right"><strong>1.250 điểm</strong></td></tr>
+            <tr><td>Hạng hiện tại</td><td align="right"><strong>Vàng</strong></td></tr>
+            <tr><td>Ưu đãi hạng</td><td>Giảm 10% khi mua sách</td></tr>
+          </table>
+
+          <h3>Tiến trình nâng hạng</h3>
+          <table border="1" cellpadding="8" cellspacing="0" width="100%">
+            <tr><td>Hạng Bạc</td><td>0 - 499 điểm</td></tr>
+            <tr><td>Hạng Vàng</td><td>500 - 1499 điểm</td></tr>
+            <tr><td>Hạng Kim Cương</td><td>1500+ điểm</td></tr>
+          </table>
+
+          <h3>Thao tác nhanh</h3>
+          <p><a href="#">Nạp điểm</a></p>
+          <p><a href="#">Lịch sử điểm</a></p>
+          <p><a href="#">Đổi mật khẩu</a></p>
+        </td>
+      </tr>
+    </table>
+  </main>
+
+  <footer>
+    <p>Tiệm sách Moonlit — Địa chỉ: Số 1, Phố Cũ, Thành phố</p>
+    <p><a href="#">Chính sách đổi trả</a> | <a href="#">Liên hệ</a></p>
+    <p>© 2025 Tiệm sách Moonlit</p>
+  </footer>
+</body>
+</html>

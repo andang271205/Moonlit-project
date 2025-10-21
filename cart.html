@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Giỏ hàng</title>
+
+</head>
+<body>
+  <header>
+    <h1>Tiệm sách Vintage Ấm Cúng</h1>
+    <p>Những cuốn sách với mùi giấy và ký ức.</p>
+  </header>
+
+  <main>
+         Cột trái: sản phẩm trong giỏ hàng. Cột phải: tóm tắt đơn hàng và phiếu giảm giá. 
+
+    <table border="1" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;">
+      <colgroup>
+        <col width="75%">
+        <col width="25%">
+      </colgroup>
+      <tr>
+        <!-- Cột trái: Giỏ hàng, mỗi sản phẩm là một dòng dọc -->
+        <td valign="top">
+          <h2>Giỏ hàng</h2>
+          <form method="post" action="#" aria-label="Form giỏ hàng">
+            <!-- Sản phẩm 1: Sách 1 -->
+            <table border="0" cellpadding="8" cellspacing="0" width="100%" style="border-bottom:1px solid #888;">
+              <tr>
+                <td width="90" align="center" valign="top">[Ảnh: "Gửi anh những trang sách cũ"]</td>
+                <td valign="top">
+                  <strong>Gửi anh những trang sách cũ</strong><br>
+                  <span>Tác giả: Nguyễn Văn A</span><br>
+                  <span>Ấn bản: Vintage, bìa mềm</span><br>
+                  <span>Đơn giá: <b>120.000 ₫</b></span><br>
+                  Số lượng: <input type="number" name="qty[1]" value="2" min="1" style="width:40px">&nbsp;
+                  <a href="#">Xóa</a>
+                </td>
+                <td align="right" valign="top"><strong>240.000 ₫</strong></td>
+              </tr>
+            </table>
+            <!-- Sản phẩm 2: Sách 2 -->
+            <table border="0" cellpadding="8" cellspacing="0" width="100%" style="border-bottom:1px solid #888;">
+              <tr>
+                <td width="90" align="center" valign="top">[Ảnh: "Những con phố mưa"]</td>
+                <td valign="top">
+                  <strong>Những con phố mưa</strong><br>
+                  <span>Tác giả: Trần Thị B</span><br>
+                  <span>Ấn bản: Tuyển tập</span><br>
+                  <span>Đơn giá: <b>85.000 ₫</b></span><br>
+                  Số lượng: <input type="number" name="qty[2]" value="1" min="1" style="width:40px">&nbsp;
+                  <a href="#">Xóa</a>
+                </td>
+                <td align="right" valign="top"><strong>85.000 ₫</strong></td>
+              </tr>
+            </table>
+            <!-- Sản phẩm 3: Sách 3 -->
+            <table border="0" cellpadding="8" cellspacing="0" width="100%" style="border-bottom:1px solid #888;">
+              <tr>
+                <td width="90" align="center" valign="top">[Ảnh: "Đi qua hoa cúc"]</td>
+                <td valign="top">
+                  <strong>Đi qua hoa cúc</strong><br>
+                  <span>Tác giả: Nguyễn Nhật Ánh</span><br>
+                  <span>Ấn bản: Bìa cứng</span><br>
+                  <span>Đơn giá: <b>100.000 ₫</b></span><br>
+                  Số lượng: <input type="number" name="qty[3]" value="1" min="1" style="width:40px">&nbsp;
+                  <a href="#">Xóa</a>
+                </td>
+                <td align="right" valign="top"><strong>100.000 ₫</strong></td>
+              </tr>
+            </table>
+            <!-- Sản phẩm 4: Sách 4 -->
+            <table border="0" cellpadding="8" cellspacing="0" width="100%" style="border-bottom:1px solid #888;">
+              <tr>
+                <td width="90" align="center" valign="top">[Ảnh: "Mắt biếc"]</td>
+                <td valign="top">
+                  <strong>Mắt biếc</strong><br>
+                  <span>Tác giả: Nguyễn Nhật Ánh</span><br>
+                  <span>Ấn bản: Bìa mềm</span><br>
+                  <span>Đơn giá: <b>95.000 ₫</b></span><br>
+                  Số lượng: <input type="number" name="qty[4]" value="1" min="1" style="width:40px">&nbsp;
+                  <a href="#">Xóa</a>
+                </td>
+                <td align="right" valign="top"><strong>95.000 ₫</strong></td>
+              </tr>
+            </table>
+          </form>
+        </td>
+        <!-- Cột phải: Tóm tắt đơn hàng & phiếu giảm giá, border ngoài -->
+        <td valign="top">
+          <h3>Tóm tắt đơn hàng</h3>
+          <table border="1" cellpadding="6" cellspacing="0" width="100%" style="border-collapse:collapse;">
+            <tr><td>Thêm mã giảm giá</td></tr>
+            <tr>
+              <td>
+                <form method="post" action="#">
+                  <input type="text" name="coupon" placeholder="Nhập mã giảm giá">
+                  <button type="submit" name="action" value="apply_coupon">Áp dụng</button>
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>Thành tiền tạm tính: <span align="right">45000 ₫</span></td>
+            </tr>
+            <tr>
+              <td><strong>Tổng cộng: 65000 ₫</strong></td>
+            </tr>
+            <tr>
+              <td><em>Đã bao gồm VAT</em></td>
+            </tr>
+            <tr>
+              <td>
+                <button type="submit">Tiến hành thanh toán</button>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </main>
+
+  <footer>
+    <p>Tiệm sách Moonlit — Địa chỉ: Số 1, Phố Cũ, Thành phố</p>
+    <p><a href="#">Chính sách đổi trả</a> | <a href="#">Liên hệ</a></p>
+    <p>© <span id="year">2025</span> Tiệm sách Vintage Ấm Cúng</p>
+  </footer>
+
+</body>
+</html>
