@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cửa Hàng Sách - Shop</title>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+              <h3 style="margin-left:20px;"><b>Moonlit</b></h3>
+                  <div class="top-links">
+                      <table border="0" width="100%" cellspacing="0" cellpadding="10">
+                      <tr  align="right">
+                          <td colspan="2">
+                              <a href="contactus.html">Contact Us</a> | 
+                              <a href="aboutus.html">About Us</a> |
+                              <a href="account.html">My Account</a> 
+                          </td>
+                      </tr>
+                      </table>
+                  </div>
+              </div>
+              <div class="main-menu">
+                  <table border="0" width="100%" cellspacing="0" cellpadding="10">
+                      <tr  align="left">
+                          <td colspan="2">
+                              <a href="index.html">Trang chủ</a> |
+                              <a href="shop.html">Sản phẩm</a> |
+                              <a href="cart.html">Giỏ hàng</a> |
+                              <a href="checkout.html">Thanh toán</a> |
+                              <a href="forum.html">Forum</a>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+              <table>
+                <td width="20%">
+                  <form action="search.html" method="get">
+                  <input type="text" id="q" name="q" placeholder="Nhập tên sách, tác giả...">
+                  <button type="submit">Tìm</button>
+                  </form>
+                </td>
+              </table>
+  </header>
+        
+   <hr>
+
+  <!-- LAYOUT 2 CỘT BẰNG BẢNG: TRÁI (DANH MỤC + LỌC) / PHẢI (MAIN) -->
+  <table width="100%" border="0" cellpadding="8" cellspacing="0">
+    <tr valign="top">
+      <!-- CỘT TRÁI: DANH MỤC + LỌC -->
+      <td width="28%">
+        <h2>Danh mục</h2>
+        <ul>
+          <li><a href="">Văn học</a></li>
+          <li><a href="">Kinh doanh</a></li>
+          <li><a href="">Kỹ năng sống</a></li>
+          <li><a href="">Thiếu nhi</a></li>
+          <li><a href="">Truyện tranh &amp; Manga</a></li>
+          <li><a href="">Giáo trình - Tham khảo</a></li>
+        </ul>
+
+        <hr>
+
+        <h2>Bộ lọc</h2>
+        <!-- FORM LỌC -->
+        <form>
+          <h3>Khoảng giá</h3>
+          <label>Min (₫):
+            <input type="number" name="price_min" placeholder="0">
+          </label>
+          <br>
+          <label>Max (₫):
+            <input type="number" name="price_max" placeholder="300000">
+          </label>
+
+          <h3>Thể loại</h3>
+          <label><input type="checkbox" name="genre" value="novel"> Tiểu thuyết</label><br>
+          <label><input type="checkbox" name="genre" value="biz"> Kinh doanh</label><br>
+          <label><input type="checkbox" name="genre" value="selfhelp"> Kỹ năng</label><br>
+          <label><input type="checkbox" name="genre" value="comic"> Truyện tranh</label><br>
+          <label><input type="checkbox" name="genre" value="kid"> Thiếu nhi</label>
+
+          <h3>Tác giả</h3>
+          <input type="text" name="author" placeholder="Nhập tên tác giả">
+
+          <h3>Ngôn ngữ</h3>
+          <select name="lang">
+            <option value="">Tất cả</option>
+            <option value="vi">Tiếng Việt</option>
+            <option value="en">Tiếng Anh</option>
+          </select>
+    
+          <h3>Năm xuất bản</h3>
+          <input type="number" name="year" placeholder="2020" min="1900" max="2099">
+
+          <h3>Đánh giá</h3>
+          <label><input type="checkbox" name="star" value="5"> ★★★★★</label><br>
+          <label><input type="checkbox" name="star" value="4"> ★★★★☆ trở lên</label><br>
+          <label><input type="checkbox" name="star" value="3"> ★★★☆☆ trở lên</label>
+
+          <p>
+            <button type="submit">Áp dụng lọc</button>
+            <button type="reset">Xóa lọc</button>
+          </p>
+        </form>
+      </td>
+
+      <!-- CỘT PHẢI: MAIN -->
+      <td>
+        <h2>Tất cả sách</h2>
+
+        <!-- THANH SẮP XẾP NHẸ -->
+        <p>
+          Sắp xếp:
+          <select>
+            <option>Mặc định</option>
+            <option>Mới nhất</option>
+            <option>Giá: Thấp đến Cao</option>
+            <option>Giá: Cao đến Thấp</option>
+            <option>Đánh giá cao</option>
+          </select>
+        </p>
+
+        <!-- GRID 3 CỘT -->
+        <table width="100%" border="0" cellpadding="8" cellspacing="0">
+          <tr valign="top">
+            <!-- SÁCH 1 -->
+            <td width="33%">
+              <a name="book-1"></a>
+              <img src="img/img1.png" alt="Bìa sách Chuyện con mèo dạy hải âu bay" width="100%">
+              <h3><a href="single product1.html">Chuyện con mèo dạy hải âu bay</a></h3>
+              <p><strong>Tác giả:</strong> Luis Sepúlveda</p>          
+              <p><strong>Giá: 50.000</strong>  <em>(cập nhật)</em></p>
+              <p><strong>Đánh giá:</strong> ★★★★★ (ví dụ: 1,2k)</p>
+              <p><small>Bìa mềm · Tiếng Việt · ~130 trang</small></p>         
+              <p><small>ISBN: (cập nhật) · NXB: (cập nhật) · Năm XB: (cập nhật)</small></p>
+              <p>
+                <button>Thêm vào giỏ</button>
+                <button>Mua ngay</button>
+              </p>
+
+              <p>Tóm tắt: Câu chuyện ấm áp về chú mèo Zorba nhận lời dạy một chú hải âu non biết bay, mang thông điệp về tình bạn, trách nhiệm và lòng can đảm.</p>
+
+            </td>
+
+            <!-- SÁCH 2 -->
+            <td width="33%" height="33%">
+              <a name="book-2"></a>
+              <img src="img/img2.png" alt="Bìa sách 2" width="100%">
+              <h3>Những ngày thơ ấu</h3>
+              <p><strong>Tác giả:</strong> Nguyên Hồng</p>
+              <p><strong>Giá:</strong> 59.000₫</p>
+              <p><strong>Đánh giá:</strong> ★★★★☆ (2,4k)</p>
+              <p><small>Bìa cứng · Tiếng Việt · 152 trang</small></p>
+              <p><small>ISBN: (cập nhật) · NXB: Đời Nay · Năm XB: (cập nhật)</small></p>
+              <p>
+                <button>Thêm vào giỏ</button>
+                <button>Mua ngay</button>
+              </p>
+              <p>Tóm tắt: Một trong những cuốn sách hay nhất về xã hội Việt Nam trước CMT8</p>
+            </td>
+
+            <!-- SÁCH 3 -->
+            <td width="33%" height="33%">
+              <a name="book-3"></a>
+              <img src="img/img3.png" alt="Bìa sách 3" width="100%">
+              <h3>Sapiens – Lược sử loài người (Khoa học – Lịch sử)</h3>
+              <p><strong>Tác giả:</strong> Yuval Noah Harari</p>
+              <p><strong>Giá:</strong> 160.000₫</p>
+              <p><strong>Đánh giá:</strong> ★★★★★ (5,4k)</p>
+              <p><small>Bìa mềm · Tiếng Việt · 500 trang</small></p>
+              <p><small>ISBN: (cập nhật) · NXB: (cập nhật) · Năm XB: (cập nhật)</small></p>
+              <p>
+                <button>Thêm vào giỏ</button>
+                <button>Mua ngay</button>
+              </p>
+              <p>Tóm tắt: Hành trình tiến hóa và phát triển của con người từ thời tiền sử đến hiện đại.</p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <!-- SÁCH 4-->
+            <td width="33%" height="33%">
+              <a name="book-1"></a>
+              <img src="img/img4.png" alt="Bìa sách 1" width="100%">
+              <h3>Bếp ấm nhà tôi</h3>
+              <p><strong>Tác giả:</strong>  Lê Duy Niệm </p>
+              <p><strong>Giá:</strong> 120.000₫</p>
+              <p><strong>Đánh giá:</strong> ★★★★★ (1,1k)</p>
+              <p><small>Bìa mềm · Tiếng Việt · 220 trang · Nhiều hình ảnh minh họa</small></p>
+              <p><small>ISBN: (cập nhật) · NXB: Thế giới · Năm XB: (cập nhật)</small></p>
+              <p>
+                <button>Thêm vào giỏ</button>
+                <button>Mua ngay</button>
+              </p>
+              <p>Những món ăn ngon, đơn giản và đậm chất Việt được chia sẻ bởi blogger ẩm thực nổi tiếng.</p>
+            </td>
+
+            <!-- SÁCH 5 -->
+            <td width="33%" height="33%">
+              <a name="book-2"></a>
+              <img src="img/img5.png" alt="Bìa sách 2" width="100%">
+              <h3>Nhà giả kim </h3>
+              <p><strong>Tác giả:</strong> Paulo Coelho</p>
+              <p><strong>Giá:</strong> 80.000₫</p>
+              <p><strong>Đánh giá:</strong> ★★★★☆ (2,1k)</p>
+              <p><small>Bìa cứng · Tiếng Việt · 224 trang</small></p>
+              <p><small>ISBN: (cập nhật) · NXB: (cập nhật) · Năm XB: (cập nhật)</small></p>
+              <p>
+                <button>Thêm vào giỏ</button>
+                <button>Mua ngay</button>
+              </p>
+              <p>Tóm tắt: Câu chuyện về hành trình theo đuổi ước mơ và khám phá bản thân đầy chất thơ.</p>
+            </td>
+
+            <!-- SÁCH 6 -->
+            <td width="33%" height="33%">
+              <a name="book-3"></a>
+              <img src="img/img6.png" alt="Bìa sách 3" width="100%">
+              <h3>Marketing 4.0 </h3>
+              <p><strong>Tác giả:</strong> Philip Kotler</p>
+              <p><strong>Giá:</strong> 135.000₫</p>
+              <p><strong>Đánh giá:</strong> ★★★★☆ (1,3k)</p>
+              <p><small>Bìa mềm · Tiếng Việt · 290 trang</small></p>
+              <p><small>ISBN: (cập nhật) · NXB: (cập nhật) · Năm XB: (cập nhật)</small></p>
+              <p>
+                <button>Thêm vào giỏ</button>
+                <button>Mua ngay</button>
+              </p>
+              <p>Tóm tắt: Tư duy tiếp thị hiện đại trong kỷ nguyên số, bài học từ thương hiệu toàn cầu.</p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <!-- SÁCH 7 -->
+            <td width="33%" height="33%">
+              <a name="book-1"></a>
+              <img src="img/img7.png" alt="Bìa sách 1" width="100%">
+              <h3>Một thoáng ta rực rỡ ở nhân gian</h3>
+              <p><strong>Tác giả:</strong> Ocean Vương</p>
+              <p><strong>Giá:</strong> 145.000₫</p>
+              <p><strong>Đánh giá:</strong> ★★★★★ (2,0k)</p>
+              <p><small>Bìa mềm · Tiếng Việt · 260 trang · Giải thích khoa học dễ hiểu</small></p>
+              <p><small>ISBN: (cập nhật) · NXB: (cập nhật) · Năm XB: (cập nhật)</small></p>
+              <p>
+                <button>Thêm vào giỏ</button>
+                <button>Mua ngay</button>
+              </p>
+              <p>Tóm tắt: Những vần thơ kể lại thời thơ ấu khi ở Việt Nam của tác giả</p>
+            </td>
+
+            <!-- SÁCH 8 -->
+            <td width="33%" height="33%">
+              <a name="book-2"></a>
+              <img src="img/img8.png" alt="Bìa sách 2" width="100%">
+              <h3>Harry Potter và Hòn đá Phù thủy (Tiểu thuyết phiêu lưu – Giả tưởng)</h3>
+              <p><strong>Tác giả:</strong> J.K. Rowling</p>
+              <p><strong>Giá:</strong> 120.000₫</p>
+              <p><strong>Đánh giá:</strong> ★★★★★ (5,0k)</p>
+              <p><small>Bìa cứng · Tiếng Việt · 320 trang</small></p>
+              <p><small>ISBN: (cập nhật) · NXB: (cập nhật) · Năm XB: (cập nhật)</small></p>
+              <p>
+                <button>Thêm vào giỏ</button>
+                <button>Mua ngay</button>
+              </p>
+              <p>Tóm tắt: Mở đầu hành trình kỳ ảo của cậu bé phù thủy nổi tiếng Harry Potter.</p>
+            </td>
+
+            <!-- SÁCH 9 -->
+            <td width="33%" height="33%">
+              <a name="book-3"></a>
+              <img src="img/img9.png" alt="Bìa sách 3" width="100%">
+              <h3>Minh triết trong ăn uống của người phương đông</h3>
+              <p><strong>Tác giả:</strong> Ngô Đức Vượng</p>
+              <p><strong>Giá:</strong> 110.000₫</p>
+              <p><strong>Đánh giá:</strong> ★★★★☆ (900+)</p>
+              <p><small>Bìa mềm · Tiếng Việt · 250 trang</small></p>
+              <p><small>ISBN: (cập nhật) · NXB: (cập nhật) · Năm XB: (cập nhật)</small></p>
+              <p>
+                <button>Thêm vào giỏ</button>
+                <button>Mua ngay</button>
+              </p>
+              <p>Tóm tắt: Chế độ ăn khoa học giúp phòng ngừa suy giảm trí nhớ và phát triển não bộ khỏe mạnh.
+</p>
+            </td>
+          </tr>
+        </table>
+
+        <!-- PHÂN TRANG ĐƠN GIẢN (MẪU) -->
+        <p>
+          Trang:
+          <a href="#">1</a> |
+          <a href="#">2</a> |
+          <a href="#">3</a> …
+        </p>
+      </td>
+    </tr>
+  </table>
+
+  <hr>
+  <footer>
+    <p>Tiệm sách Moonlit — Địa chỉ: Số 1, Phố Cũ, Thành phố</p>
+    <p><a href="#">Chính sách đổi trả</a> | <a href="#">Liên hệ</a></p>
+    <p>© 2025 Tiệm sách Moonlit</p>
+  </footer>
+
+</body>
+</html>
