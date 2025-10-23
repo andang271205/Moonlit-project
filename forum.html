@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diễn đàn Moonlit Bookstore</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .forum-section {
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      padding: 15px;
+    }
+
+    .forum-section h2 {
+      margin-top: 0;
+    }
+
+    .thread-list {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+    }
+
+    .thread-list li {
+      border-top: 1px solid #ddd;
+      padding: 10px 0;
+    }
+
+    .thread-list li:first-child {
+      border-top: none;
+    }
+
+    .thread-title {
+      font-weight: bold;
+      cursor: pointer;
+      color: #333;
+    }
+
+    .thread-meta {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .new-post {
+      margin-top: 30px;
+      border: 1px solid #ccc;
+      padding: 15px;
+    }
+
+    .new-post input, .new-post textarea {
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      padding: 8px;
+    }
+
+    .new-post button {
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+
+    /* ---------- Phần bài viết mẫu ---------- */
+    .post-detail {
+      border: 1px solid #aaa;
+      padding: 20px;
+      margin-top: 30px;
+      background-color: #fafafa;
+    }
+
+    .post-detail h3 {
+      margin-top: 0;
+    }
+
+    .rating {
+      margin: 10px 0;
+    }
+
+    .star {
+      font-size: 24px;
+      color: #ccc;
+      cursor: pointer;
+    }
+
+    .star.active {
+      color: gold;
+    }
+
+    .comments {
+      margin-top: 20px;
+    }
+
+    .comment {
+      border-top: 1px solid #ddd;
+      padding: 10px 0;
+    }
+
+    .comment:first-child {
+      border-top: none;
+    }
+
+    .comment strong {
+      color: #333;
+    }
+
+    .add-comment textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 8px;
+      margin-top: 10px;
+    }
+
+    .add-comment button {
+      margin-top: 8px;
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="top-bar">
+      <h3 style="margin-left:20px;"><b>Moonlit</b></h3>
+      <div class="top-links">
+        <table border="0" width="100%" cellspacing="0" cellpadding="10">
+          <tr align="right">
+            <td colspan="2">
+              <a href="contactus.html">Contact Us</a> | 
+              <a href="aboutus.html">About Us</a> |
+              <a href="account.html">My Account</a> 
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="main-menu">
+      <table border="0" width="100%" cellspacing="0" cellpadding="10">
+        <tr align="left">
+          <td colspan="2">
+            <a href="index.html">Trang chủ</a> |
+            <a href="shop.html">Sản phẩm</a> |
+            <a href="cart.html">Giỏ hàng</a> |
+            <a href="checkout.html">Thanh toán</a> |
+            <a href="forum.html">Forum</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <table>
+      <td width="20%">
+        <form action="search.html" method="get">
+          <input type="text" id="q" name="q" placeholder="Nhập tên sách, tác giả...">
+          <button type="submit">Tìm</button>
+        </form>
+      </td>
+    </table>
+
+    <h1>Diễn đàn Moonlit</h1>
+    <p>Nơi kết nối những người yêu sách và chia sẻ cảm nhận chân thành</p>
+  </header>
+
+  <main>
+    <section class="forum-section">
+      <h2>📚 Thảo luận về sách</h2>
+      <ul class="thread-list">
+        <li onclick="showPost()">
+          <div class="thread-title">Bạn nghĩ gì về “Mắt biếc” của Nguyễn Nhật Ánh?</div>
+          <div class="thread-meta">Bởi <b>LanAnh</b> - 20/10/2025 | 24 phản hồi</div>
+        </li>
+        <li>
+          <div class="thread-title">Top 5 cuốn self-help đáng đọc nhất năm 2025?</div>
+          <div class="thread-meta">Bởi <b>MinhTuấn</b> - 22/10/2025 | 12 phản hồi</div>
+        </li>
+        <li>
+          <div class="thread-title">Review: “The Midnight Library” có đáng đọc?</div>
+          <div class="thread-meta">Bởi <b>BookLover</b> - 23/10/2025 | 18 phản hồi</div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="forum-section">
+      <h2>🌙 Góc chia sẻ cảm hứng</h2>
+      <ul class="thread-list">
+        <li>
+          <div class="thread-title">Câu nói trong sách khiến bạn thay đổi suy nghĩ?</div>
+          <div class="thread-meta">Bởi <b>HoàiNam</b> - 19/10/2025 | 30 phản hồi</div>
+        </li>
+        <li>
+          <div class="thread-title">Khi nào bạn thích đọc sách nhất trong ngày?</div>
+          <div class="thread-meta">Bởi <b>YenNhi</b> - 21/10/2025 | 9 phản hồi</div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="new-post">
+      <h2>Tạo chủ đề mới</h2>
+      <form>
+        <label for="title">Tiêu đề:</label>
+        <input type="text" id="title" name="title" placeholder="Nhập tiêu đề chủ đề...">
+
+        <label for="content">Nội dung:</label>
+        <textarea id="content" name="content" rows="5" placeholder="Chia sẻ cảm nghĩ của bạn..."></textarea>
+
+        <button type="submit">Đăng bài</button>
+      </form>
+    </section>
+
+    <!-- Bài viết mẫu (bài Nguyễn Nhật Ánh) -->
+    <section id="post-detail" class="post-detail" style="display:none;">
+      <h3>“Mắt biếc” - Câu chuyện của những nỗi nhớ</h3>
+      <p><strong>Người đăng:</strong> LanAnh | <em>20/10/2025</em></p>
+      <p>“Mắt biếc” là một tác phẩm đầy cảm xúc của Nguyễn Nhật Ánh, kể về tình yêu đơn phương ngọt ngào nhưng cũng nhiều day dứt. Câu chuyện khiến người đọc suy ngẫm về tuổi trẻ, sự ngây thơ và những điều không thể níu giữ.</p>
+
+      <div class="rating">
+        <strong>Đánh giá bài viết:</strong><br>
+        <span class="star" onclick="rate(1)">★</span>
+        <span class="star" onclick="rate(2)">★</span>
+        <span class="star" onclick="rate(3)">★</span>
+        <span class="star" onclick="rate(4)">★</span>
+        <span class="star" onclick="rate(5)">★</span>
+        <span id="rating-value">0/5</span>
+      </div>
+
+      <div class="comments">
+        <h4>Bình luận:</h4>
+        <div class="comment"><strong>MinhTuấn:</strong> Mình rất đồng cảm với nhân vật Ngạn, đọc lại vẫn thấy buồn.</div>
+        <div class="comment"><strong>YenNhi:</strong> Truyện nhẹ nhàng nhưng ám ảnh, đúng là phong cách Nguyễn Nhật Ánh.</div>
+      </div>
+
+      <div class="add-comment">
+        <h4>Thêm bình luận</h4>
+        <textarea id="new-comment" placeholder="Viết cảm nghĩ của bạn..."></textarea>
+        <button onclick="addComment()">Gửi bình luận</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Moonlit Bookstore </p>
+  </footer>
+
+  <script>
+    function showPost() {
+      document.getElementById('post-detail').style.display = 'block';
+      window.scrollTo(0, document.getElementById('post-detail').offsetTop);
+    }
+
+    function rate(star) {
+      const stars = document.querySelectorAll('.star');
+      stars.forEach((s, i) => {
+        s.classList.toggle('active', i < star);
+      });
+      document.getElementById('rating-value').innerText = `${star}/5`;
+    }
+
+    function addComment() {
+      const text = document.getElementById('new-comment').value.trim();
+      if (!text) return alert('Vui lòng nhập bình luận!');
+      const commentBox = document.createElement('div');
+      commentBox.className = 'comment';
+      commentBox.innerHTML = `<strong>Bạn đọc:</strong> ${text}`;
+      document.querySelector('.comments').appendChild(commentBox);
+      document.getElementById('new-comment').value = '';
+    }
+  </script>
+
+</body>
+</html>
