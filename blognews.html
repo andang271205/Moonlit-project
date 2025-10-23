@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tin tức & Blog | Moonlit Bookstore</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .news-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .news-item {
+      flex: 1;
+      min-width: 300px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .news-item img {
+      width: 100%;
+      height: 220px; 
+      object-fit: cover; 
+      display: block;
+    }
+
+    aside {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="top-bar">
+              <h3 style="margin-left:20px;"><b>Moonlit</b></h3>
+                  <div class="top-links">
+                      <table border="0" width="100%" cellspacing="0" cellpadding="10">
+                      <tr  align="right">
+                          <td colspan="2">
+                              <a href="contactus.html">Contact Us</a> | 
+                              <a href="aboutus.html">About Us</a> |
+                              <a href="account.html">My Account</a> 
+                          </td>
+                      </tr>
+                      </table>
+                  </div>
+              </div>
+              <div class="main-menu">
+                  <table border="0" width="100%" cellspacing="0" cellpadding="10">
+                      <tr  align="left">
+                          <td colspan="2">
+                              <a href="index.html">Trang chủ</a> |
+                              <a href="shop.html">Sản phẩm</a> |
+                              <a href="cart.html">Giỏ hàng</a> |
+                              <a href="checkout.html">Thanh toán</a> |
+                              <a href="forum.html">Forum</a>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+              <table>
+                <td width="20%">
+                  <form action="search.html" method="get">
+                  <input type="text" id="q" name="q" placeholder="Nhập tên sách, tác giả...">
+                  <button type="submit">Tìm</button>
+                  </form>
+                </td>
+              </table>
+
+    <h1>Tin tức & Blog của Moonlit</h1>
+    <p>Khám phá câu chuyện đằng sau từng cuốn sách và xu hướng đọc mới nhất</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Bài viết mới nhất</h2>
+
+      <div class="news-row">
+        <div class="news-item">
+          <h3>5 Sách Hay Cho Mùa Thu Ấm Áp</h3>
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80" alt="Sách mùa thu">
+          <p>Gợi ý những cuốn sách giúp bạn thư giãn và tận hưởng mùa thu trọn vẹn.</p>
+          <a href="#">Đọc thêm</a>
+        </div>
+
+        <div class="news-item">
+          <h3>Phỏng vấn tác giả: Khi ánh trăng soi vào câu chữ</h3>
+          <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=800&q=80" alt="Phỏng vấn tác giả">
+          <p>Tác giả Minh Nguyệt chia sẻ về hành trình sáng tác và cảm hứng viết.</p>
+          <a href="#">Đọc thêm</a>
+        </div>
+
+        <div class="news-item">
+          <h3>Xu hướng đọc sách của giới trẻ Việt năm 2025</h3>
+          <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80" alt="Xu hướng đọc sách">
+          <p>Cùng Moonlit khám phá những thể loại đang được độc giả trẻ yêu thích.</p>
+          <a href="#">Đọc thêm</a>
+        </div>
+      </div>
+    </section>
+
+    <aside>
+      <h2>Chuyên mục nổi bật</h2>
+      <ul>
+        <li><a href="#">Góc độc giả nổi bật</a></li>
+        <li><a href="#">Review sách</a></li>
+        <li><a href="#">Tác giả Việt Nam</a></li>
+        <li><a href="#">Tin khuyến mãi</a></li>
+        <li><a href="#">Các xu hướng đọc sách</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>© 2025 Moonlit Bookstore — Lan tỏa tình yêu sách giữa đêm trăng</p>
+  </footer>
+
+</body>
+</html>
