@@ -1,6 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Moonlit</title>
     <body>
-        <h1>Hello mấy ní</h1>
+        <header>
+            <div class="top-bar">
+            <h3 style="margin-left:20px;"><b>Moonlit</b></h3>
+                <div class="top-links">
+                    <table border="0" width="100%" cellspacing="0" cellpadding="10">
+                    <tr  align="right">
+                        <td colspan="2">
+                            <a href="contactus.html">Contact Us</a> | 
+                            <a href="aboutus.html">About Us</a> |
+                            <a href="account.html">My Account</a> 
+                        </td>
+                    </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="main-menu">
+                <table border="0" width="100%" cellspacing="0" cellpadding="10">
+                    <tr  align="left">
+                        <td colspan="2">
+                            <a href="index.html">Trang chủ</a> |
+                            <a href="shop.html">Sản phẩm</a> |
+                            <a href="cart.html">Giỏ hàng</a> |
+                            <a href="checkout.html">Thanh toán</a> |
+                            <a href="forum.html">Forum</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="slider">
+                <img src="img/img2.jpg" alt="hình 1" class="slide" style="display:block; width: 100%; height: 300px; ">
+                <img src="img/img3.jpg" alt="hình 2" class="slide" style="display:none; width: 100%; height: 300px; ">
+                <img src="img/img10.png" alt="hình 3" class="slide" style="display:none; width: 100%; height: 300px; ">
+            </div>
+            <script>
+                let index = 0;
+                function showSlides() 
+                {
+                    const slides = document.getElementsByClassName("slide");
+                    for (let i = 0; i < slides.length; i++) slides[i].style.display = "none";
+                    index++;
+                    if (index > slides.length) index = 1;
+                    slides[index-1].style.display = "block";
+                    setTimeout(showSlides, 3000); 
+                }
+                showSlides();
+            </script>
+        </header>
+        
+            
+        <table>
+            <tr>
+                <td width = "70%">
+                    <h3>Best sellers</h3>
+                </td>
+                <td width = "30%">
+                    <a href="shop.html" class="view-all" >Xem tất cả</a>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td width="25%">
+                    <img src="img/img1.png" alt="SP1" style="width: 150px; height: 150px;"><br>
+                    <div class="product-name">Chuyện con mèo dạy hải âu bay</div>
+                    <div class="price">Giá: 50.000</div>
+                    <button class="btn">Add to cart</button>
+                </td>
+
+                <td width="25%">
+                    <img src="img/img2.png" alt="SP2" style="width: 150px; height: 150px;"><br>
+                    <div class="product-name">Những ngày thơ ấu</div>
+                    <div class="price">Giá: 59.000 ₫</div>
+                    <button class="btn">Add to cart</button>
+                </td>
+
+                <td width="25%">
+                    <img src="img/img3.png" alt="SP3" style="width: 150px; height: 150px;"><br>
+                    <div class="product-name">Sapiens – Lược sử loài người (Khoa học – Lịch sử)</div>
+                    <div class="price">Giá: 160.000₫</div>
+                    <button class="btn">Add to cart</button>
+                </td>
+
+                <td width="25%">
+                    <img src="img/img4.png" alt="SP4" style="width: 150px; height: 150px;"><br>
+                    <div class="product-name">Bếp ấm nhà tôi</div>
+                    <div class="price">Giá 120.000₫</div>
+                    <button class="btn">Add to cart</button>
+                </td>
+            </tr>
+        </table>
+        <br><br><br><br>
+        <hr>
+        <footer>
+            <p>Tiệm sách Moonlit — Địa chỉ: Số 1, Phố Cũ, Thành phố</p>
+            <p><a href="#">Chính sách đổi trả</a> | <a href="#">Liên hệ</a></p>
+            <p>© <span id="year">2025</span> Tiệm sách Vintage Ấm Cúng</p>
+        </footer>
     </body>
 </html>
