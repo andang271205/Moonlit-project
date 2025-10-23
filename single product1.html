@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>Con mèo dạy hải âu bay</title>
+</head>
+<body>
+
+  <!-- HEADER-->
+   <table width="100%" border="0" cellpadding="8" cellspacing="0">
+    <tr valign="mid">
+        <!--TÊN-->
+        <td width="20%">
+            <h1>Moonlit</h1>
+        </td>
+
+        <!--MENU-->
+        <td width="50%">
+            <nav>
+                <a href="index.html">Trang chủ</a> |
+                <a href="cua-hang.html">Cửa hàng</a> |
+                <a href="the-loai.html">Thể loại</a> |
+                <a href="tac-gia.html">Tác giả</a> |
+                <a href="khuyen-mai.html">Khuyến mãi</a> |
+                <a href="lien-he.html">Liên hệ</a>
+            </nav>
+        </td>
+
+        <!--SEARCH-->
+        <td width="20%">
+                <form action="search.html" method="get">
+                <input type="text" id="q" name="q" placeholder="Nhập tên sách, tác giả...">
+                <button type="submit">Tìm</button>
+                </form>
+        </td>
+
+        <!--MENU TÀI KHOẢN GIỎ HÀNG-->
+        <td with="10%">
+            <nav>
+            <a href="dang-nhap.html">Đăng nhập</a> <br>
+            <a href="dang-ky.html">Đăng ký</a> <br>
+            <a href="gio-hang.html">Giỏ hàng <sup>0</sup></a>
+            </nav>
+        </td>
+    </tr>
+   </table>
+   <hr>
+
+  <!-- KHỐI SẢN PHẨM: 2 CỘT -->
+  <table width="100%" cellpadding="10" cellspacing="0" border="0">
+    <tr valign="top">
+      <!-- CỘT TRÁI: ẢNH BÌA -->
+      <td width="38%">
+        <img src="img/img1.png" alt="Bìa sách Atomic Habits" width="100%">
+        <p><small>*Hình ảnh minh họa.</small></p>
+      </td>
+
+      <!-- CỘT PHẢI: THÔNG TIN & MUA HÀNG -->
+      <td>
+        <h2>Con mèo dạy hải âu bay </h2>
+        <p><strong>Tác giả:</strong> Luis Sepúlveda</p>
+        <p><strong>Nhà xuất bản:</strong> NXB Trẻ</p>
+        <p><strong>Năm xuất bản:</strong> 2022</p>
+        <p><strong>Đánh giá:</strong> ★★★★★ (2,1k)</p>
+
+        <h3>Giá</h3>
+        <p><strong>50.000₫</strong> &nbsp; <em>(Giá bìa: 70.000₫)</em></p>
+
+        <!-- MUA HÀNG (không JS) -->
+        <form action="them-vao-gio.html" method="post">
+          <label for="qty"><strong>Số lượng:</strong></label>
+          <input type="number" id="qty" name="qty" value="1" min="1">
+          <input type="hidden" name="sku" value="ATOMIC-HABITS-VI-ISBN9781234567890">
+          <p>
+            <button type="submit">Thêm vào giỏ</button>
+            <button type="button" onclick="location.href='thanh-toan.html'">Mua ngay</button>
+          </p>
+        </form>
+
+        <!-- TÓM TẮT NHANH -->
+        <h3>Tóm tắt nhanh</h3>
+        <ul>
+          <li>Câu chuyện ngắn, truyền cảm hứng về lòng tốt và trách nhiệm.</li>
+          <li>Phù hợp với cả trẻ em và người lớn, giàu tính nhân văn.</li>
+          <li>Lối viết nhẹ nhàng, dí dỏm, dễ hiểu, xúc động.</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+
+  <!-- MÔ TẢ CHI TIẾT -->
+  <h3>Mô tả</h3>
+  <p>
+    “Chuyện con mèo dạy hải âu bay” là một truyện ngắn nổi tiếng của Luis Sepúlveda, kể về chú mèo Zorba nhận lời chăm sóc và dạy một chú hải âu non biết bay sau khi mẹ nó không may qua đời vì ô nhiễm dầu.  
+Tác phẩm phản ánh những giá trị sâu sắc như sự tử tế, tình bạn, lòng cam đảm và cả trách nhiệm vượt lên bản năng.  
+Với giọng văn hóm hỉnh, ấm áp, quyển sách là món quà tuyệt vời cho mọi lứa tuổi muốn tìm lại những điều giản dị nhưng quý giá trong cuộc sống.
+
+  </p>
+
+  <!-- THÔNG SỐ KỸ THUẬT -->
+  <h3>Thông số</h3>
+  <table border="1" cellpadding="6" cellspacing="0" width="50%">
+    <tr>
+      <th align="left">ISBN</th>
+      <td>978-1234567890</td>
+    </tr>
+    <tr>
+      <th align="left">Số trang</th>
+      <td>320</td>
+    </tr>
+    <tr>
+      <th align="left">Định dạng</th>
+      <td>Bìa mềm (Paperback)</td>
+    </tr>
+    <tr>
+      <th align="left">Kích thước</th>
+      <td>14 x 20.5 cm</td>
+    </tr>
+    <tr>
+      <th align="left">Ngôn ngữ</th>
+      <td>Tiếng Việt</td>
+    </tr>
+    <tr>
+      <th align="left">Trọng lượng</th>
+      <td>350 g</td>
+    </tr>
+    <tr>
+      <th align="left">Thể loại</th>
+      <td>Tiểu thuyết</td>
+    </tr>
+  </table>
+
+  <!-- VẬN CHUYỂN & ĐỔI TRẢ -->
+  <h3>Vận chuyển &amp; Đổi trả</h3>
+  <ul>
+    <li>Giao nội địa: 1–3 ngày làm việc (nội thành), 3–5 ngày (ngoại tỉnh).</li>
+    <li>Đổi/trả trong 7 ngày nếu sách lỗi in ấn, rách, thiếu trang.</li>
+    <li>Đóng gói chống sốc, bọc chống ẩm.</li>
+  </ul>
+
+  <!-- ĐÁNH GIÁ (MẪU) -->
+  <h3>Đánh giá của độc giả</h3>
+  <p><strong>Lan P.</strong> “Dễ hiểu, mua cho bé nhà bé rất thích”</p>
+  <p><strong>Hữu N.</strong> “Mua tặng team, mọi người đều thích.”</p>
+  <p><strong>Thu T.</strong> “Bản dịch mượt, ví dụ cụ thể.”</p>
+  <p><small>*Đánh giá chỉ mang tính tham khảo.</small></p>
+
+  <!-- SÁCH LIÊN QUAN -->
+  <h3>Sách liên quan</h3>
+  <table width="100%" cellpadding="8" cellspacing="0" border="0">
+    <tr valign="top">
+      <td width="33%">
+        <a href="single-sach-2.html">
+          <img src="https://via.placeholder.com/200x300?text=Sach+Lien+Quan+1" alt="Sách liên quan 1" width="100%">
+        </a>
+        <p><a href="single-sach-2.html">Deep Work</a><br><small>189.000₫</small></p>
+      </td>
+      <td width="33%">
+        <a href="single-sach-3.html">
+          <img src="https://via.placeholder.com/200x300?text=Sach+Lien+Quan+2" alt="Sách liên quan 2" width="100%">
+        </a>
+        <p><a href="single-sach-3.html">The Power of Habit</a><br><small>175.000₫</small></p>
+      </td>
+      <td width="33%">
+        <a href="single-sach-4.html">
+          <img src="https://via.placeholder.com/200x300?text=Sach+Lien+Quan+3" alt="Sách liên quan 3" width="100%">
+        </a>
+        <p><a href="single-sach-4.html">Mindset</a><br><small>165.000₫</small></p>
+      </td>
+    </tr>
+  </table>
+
+  <hr>
+  <!-- CHÂN TRANG -->
+  <p>© 2025 Hiệu Sách Demo · Hotline: 0900 000 000 · Email: support@demosach.vn</p>
+
+</body>
+</html>
